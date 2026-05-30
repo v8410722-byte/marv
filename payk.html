@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">   
+        <title>Людина павук</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="stor-body">
+         <header>
+                <div class="container header-flex">
+                        <a href="index.html" class="back-btn">⇦Назад</a>
+                        <h1>Людина павук</h1>
+                </div>
+         </header>
+         <section class="images">
+                <div class="container flex">
+                        <div class="img-box">
+                                <img src="img/payk.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/payk2.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/payk3.jpg">
+                        </div>
+                        
+                </div>
+        </section>
+        
+
+        <section class="content">
+                <div class="container">
+                        <h2 class="stor-h2">Хто така людина павук</h2>
+                        <p>Людина-павук — це відомий супергерой із коміксів видавництва Marvel Comics. Його справжнє ім’я — Пітер Паркер. Він є одним із найпопулярніших персонажів у світі супергероїв.</p>
+                        <p>Одного разу Пітера вкусив радіоактивний павук, після чого він отримав незвичайні здібності. Він може лазити по стінах, має велику силу, швидкість і здатність відчувати небезпеку заздалегідь.</p>
+                        <p>Людина-павук використовує свої сили для боротьби зі злочинністю та захисту мешканців міста. Для пересування він застосовує спеціальну павутину, яку запускає за допомогою власноруч створених пристроїв.</p>
+                        <p>Цей герой навчає людей бути сміливими, чесними та відповідальними. Його життєве правило — допомагати іншим і використовувати свої здібності на благо суспільства.</p>
+
+                </div>
+        
+        </section>
+
+        <footer>
+                <div class="countainer">
+                        <p>Авторський сайт Ковбасюк Іван</p>
+                </div>
+
+        </footer>
+
+    </body>
+
+</html>
+<button id="theme-btn">🌙 Нічна тема</button>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeBtn.textContent = "☀️ Денна тема";
+    } else {
+        themeBtn.textContent = "🌙 Нічна тема";
+    }
+});
+</script>

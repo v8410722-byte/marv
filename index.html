@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="UTF-8">   
+        <title>Мій перший сайт</title>  
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <button id="theme-btn">🌙 Нічна тема</button>
+       <h1>MARVEL</h1>
+       <h2>Ласкаво просимо на сайт, присвячений героям MARVEL </h2>
+       <div class="hero-grid">
+                <div class="hero-card hero-center top">
+                                              
+                                <a href="zaz_lyd.html"><img class="img-hero" src="img/zal1.jpg" height="150px"></a>
+                                <a href="zaz_lyd.html"><p class="name-hero">Залізна людина</p></a>
+                </div>       
+
+                <div class="hero-card left">
+                                <a href="payk.html"><img class="img-hero"src="img/payk.jpg" height="150px"></a>
+                                <p class="name-hero" href="payk.html">Людина павук</p>
+                </div>
+                  <div class="hero-card right">             
+                               <a href="tor.html"> <img class="img-hero"src="img/tor.jpg" height="150px"></a>
+                                <p class="name-hero"href="tor.html"  >Тор</p>
+                          </div>  
+                <div class="hero-card hero-center bottom">
+                                <a href="halk.html"><img class="img-hero"src="img/halk.jpg" height="150px"></a>
+                                <p class="name-hero" >Халк</p>
+                </div>  
+
+       </div>           
+       <hr>
+       <p id="footer">Всі матеріали взято з <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%96%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D1%81%D0%B2%D1%96%D1%82_Marvel">Вікіпедіа</a></p>
+       
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeBtn.textContent = "☀️ Денна тема";
+    } else {
+        themeBtn.textContent = "🌙 Нічна тема";
+    }
+});
+</script>
+
+    </body>
+
+</html>
+<p id="datetime"></p>
+
+<script>
+function showTime() {
+    let now = new Date();
+
+    document.getElementById("datetime").innerHTML =
+        now.toLocaleDateString("uk-UA") + " " +
+        now.toLocaleTimeString("uk-UA");
+}
+
+showTime();
+setInterval(showTime, 1000);
+</script>
+
+</body>
+</html>

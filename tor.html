@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">   
+        <title>Тор</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="stor-body">
+         <header>
+                <div class="container header-flex">
+                        <a href="index.html" class="back-btn">⇦Назад</a>
+                        <h1>Тор</h1>
+                </div>
+         </header>
+         <section class="images">
+                <div class="container flex">
+                        <div class="img-box">
+                                <img src="img/tor.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/tor2.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/tor3.jpg">
+                        </div>
+                        
+                </div>
+        </section>
+        
+
+        <section class="content">
+                <div class="container">
+                        <h2 class="stor-h2">Хто такий Тор</h2>
+                        <p>Тор — це могутній супергерой із коміксів видавництва Marvel Comics. Він заснований на образі Тор, бога грому зі скандинавської міфології. Тор відомий своєю силою, хоробрістю та прагненням захищати добро.</p>
+                        <p>Тор є принцом чарівного світу Асгард і сином Одін. Він володіє могутнім молотом Мйольніром, за допомогою якого може керувати блискавками та літати.</p>
+                        <p>У багатьох пригодах Тор бореться зі злочинцями та небезпечними ворогами, які загрожують людям і всесвіту. Він часто допомагає іншим героям та входить до команди супергероїв Месники.</p>
+                        <p>Тор є прикладом мужності, честі та відданості своїм друзям. Незважаючи на свою величезну силу, він завжди намагається використовувати її для захисту слабших і підтримання справедливості.</p>
+
+                </div>
+        
+        </section>
+
+        <footer>
+                <div class="countainer">
+                        <p>Авторський сайт Ковбасюк Іван</p>
+                </div>
+
+        </footer>
+
+    </body>
+
+</html>
+<button id="theme-btn">🌙 Нічна тема</button>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeBtn.textContent = "☀️ Денна тема";
+    } else {
+        themeBtn.textContent = "🌙 Нічна тема";
+    }
+});
+</script>

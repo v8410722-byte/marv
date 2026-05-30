@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">   
+        <title>залізна людина</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="stor-body">
+         <header>
+                <div class="container header-flex">
+                        <a href="index.html" class="back-btn">⇦Назад</a>
+                        <h1>залізна людина</h1>
+                </div>
+         </header>
+         <section class="images">
+                <div class="container flex">
+                        <div class="img-box">
+                                <img src="img/zal1.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/zal2.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/zal3.jpg">
+                        </div>
+                        
+                </div>
+        </section>
+        
+
+        <section class="content">
+                <div class="container">
+                        <h2 class="stor-h2">Хто така залізна людина?</h2>
+                        <p>Iron Man, або Залізна Людина, — це один із найвідоміших супергероїв компанії Marvel. Його справжнє ім’я — Тоні Старк. Він є талановитим винахідником, мільярдером і власником великої технологічної компанії. Завдяки своєму розуму та знанням він створив особливий броньований костюм, який зробив його супергероєм.</p>
+                        <p>Історія Тоні Старка почалася тоді, коли він потрапив у полон до ворогів і отримав серйозне поранення. Щоб урятувати своє життя, він створив перший металевий костюм із потужним джерелом енергії. За допомогою цього винаходу Тоні зміг утекти та вирішив використовувати свої технології для захисту людей.</p>
+                        <p>Костюм Залізної Людини має багато можливостей. Він дозволяє літати, стріляти енергетичними променями та захищає героя від небезпеки. Тоні Старк постійно вдосконалював свої винаходи й створював нові моделі костюмів. Саме тому його вважають одним із найрозумніших героїв у світі Marvel.</p>
+                        <p>Залізна Людина є членом команди Месників — групи супергероїв, які разом борються проти зла. Він допомагав рятувати світ від небезпечних ворогів та різних катастроф. У фільмах роль цього героя виконав Robert Downey Jr., і завдяки його грі персонаж став дуже популярним у всьому світі.</p>
+
+                </div>
+        
+        </section>
+
+        <footer>
+                <div class="countainer">
+                        <p>Авторський сайт Ковбасюк Іван</p>
+                </div>
+
+        </footer>
+
+    </body>
+
+</html>
+<button id="theme-btn">🌙 Нічна тема</button>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeBtn.textContent = "☀️ Денна тема";
+    } else {
+        themeBtn.textContent = "🌙 Нічна тема";
+    }
+});
+</script>

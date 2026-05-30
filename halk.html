@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">   
+        <title>Халк</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="stor-body">
+         <header>
+                <div class="container header-flex">
+                        <a href="index.html" class="back-btn">⇦Назад</a>
+                        <h1>халк</h1>
+                </div>
+         </header>
+         <section class="images">
+                <div class="container flex">
+                        <div class="img-box">
+                                <img src="img/halk.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/halk2.jpg">
+                        </div>
+                        <div class="img-box">
+                                <img src="img/halk3.jpg">
+                        </div>
+                        
+                </div>
+        </section>
+        
+
+        <section class="content">
+                <div class="container">
+                        <h2 class="stor-h2">Хто такий Халк</h2>
+                        <p>Hulk — це один із найвідоміших супергероїв всесвіту Marvel. Його справжнє ім’я — Брюс Беннер, талановитий вчений-фізик. Після небезпечного вибуху гамма-променів він отримав здатність перетворюватися на величезного зеленого велетня, коли відчуває сильний гнів або стрес. Халк має надзвичайну силу, витривалість і здатність швидко відновлюватися після поранень.</p>
+                        <p>Брюс Беннер і Халк є ніби двома особистостями в одному тілі. Беннер — спокійний, розумний і стриманий чоловік, який намагається контролювати свої емоції. Халк, навпаки, часто діє імпульсивно та руйнівно. Через це герой постійно бореться сам із собою, намагаючись знайти баланс між людяністю та величезною силою.</p>
+                        <p>Персонаж Халка вперше з’явився у коміксах у 1962 році. Його створили письменник Stan Lee та художник Jack Kirby. Образ Халка частково був натхненний історіями про Франкенштейна та Доктора Джекіла і містера Гайда. Герой швидко став популярним завдяки своїй незвичайній історії та драматичному характеру.</p>
+                        <p>Халк є членом команди супергероїв Avengers. У фільмах його роль виконували різні актори, а найбільш відомим став Mark Ruffalo. Персонаж з’являється у багатьох фільмах кіновсесвіту Marvel, де допомагає рятувати світ від небезпечних ворогів та космічних загроз.</p>
+
+                </div>
+        
+        </section>
+
+        <footer>
+                <div class="countainer">
+                        <p>Авторський сайт Ковбасюк Іван</p>
+                </div>
+
+        </footer>
+
+    </body>
+
+</html>
+<button id="theme-btn">🌙 Нічна тема</button>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeBtn.textContent = "☀️ Денна тема";
+    } else {
+        themeBtn.textContent = "🌙 Нічна тема";
+    }
+});
+</script>
